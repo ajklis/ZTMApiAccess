@@ -1,0 +1,15 @@
+E:\.praca\ZTMApiAccess\ZTMApiAccess\bin\Debug\net6.0\ZTMApiAccess.exe
+E:\.praca\ZTMApiAccess\ZTMApiAccess\bin\Debug\net6.0\ZTMApiAccess.deps.json
+E:\.praca\ZTMApiAccess\ZTMApiAccess\bin\Debug\net6.0\ZTMApiAccess.runtimeconfig.json
+E:\.praca\ZTMApiAccess\ZTMApiAccess\bin\Debug\net6.0\ZTMApiAccess.dll
+E:\.praca\ZTMApiAccess\ZTMApiAccess\bin\Debug\net6.0\ZTMApiAccess.pdb
+E:\.praca\ZTMApiAccess\ZTMApiAccess\obj\Debug\net6.0\ZTMApiAccess.csproj.AssemblyReference.cache
+E:\.praca\ZTMApiAccess\ZTMApiAccess\obj\Debug\net6.0\ZTMApiAccess.GeneratedMSBuildEditorConfig.editorconfig
+E:\.praca\ZTMApiAccess\ZTMApiAccess\obj\Debug\net6.0\ZTMApiAccess.AssemblyInfoInputs.cache
+E:\.praca\ZTMApiAccess\ZTMApiAccess\obj\Debug\net6.0\ZTMApiAccess.AssemblyInfo.cs
+E:\.praca\ZTMApiAccess\ZTMApiAccess\obj\Debug\net6.0\ZTMApiAccess.csproj.CoreCompileInputs.cache
+E:\.praca\ZTMApiAccess\ZTMApiAccess\obj\Debug\net6.0\ZTMApiAccess.dll
+E:\.praca\ZTMApiAccess\ZTMApiAccess\obj\Debug\net6.0\refint\ZTMApiAccess.dll
+E:\.praca\ZTMApiAccess\ZTMApiAccess\obj\Debug\net6.0\ZTMApiAccess.pdb
+E:\.praca\ZTMApiAccess\ZTMApiAccess\obj\Debug\net6.0\ZTMApiAccess.genruntimeconfig.cache
+E:\.praca\ZTMApiAccess\ZTMApiAccess\obj\Debug\net6.0\ref\ZTMApiAccess.dll
