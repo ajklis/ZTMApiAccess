@@ -1,0 +1,53 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{hyperref}
+
+\title{Projekt aplikacji pokazującej opóźnienia autobusów}
+\author{Adam Kliś}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Wprowadzenie}
+Niniejszy dokument stanowi podsumowanie projektu aplikacji mającej na celu pobieranie danych z API ZTM Warszawskiego, przetwarzanie tych danych, wyświetlanie mapy przystanków oraz obliczanie średniego opóźnienia autobusów na wybranej trasie. Projekt zakładał również przechowywanie zebranych danych w bazie przez długi okres czasu, przekraczający miesiąc.
+
+\section{Cel Projektu}
+Głównym celem projektu było opracowanie aplikacji umożliwiającej użytkownikom:
+\begin{itemize}
+    \item Pobieranie danych z API ZTM Warszawskiego, w tym informacji o przystankach, rozkładach jazdy i opóźnieniach.
+    \item Wybór dwóch przystanków, linii autobusowej, kierunku oraz okresu czasu.
+    \item Wyświetlenie mapy z zaznaczonymi przystankami.
+    \item Obliczenie średniego opóźnienia autobusów na wybranej trasie w określonym czasie.
+    \item Przechowywanie zebranych danych w bazie danych przez długi okres (powyżej miesiąca).
+\end{itemize}
+
+\section{Implementacja}
+Aplikacja została zaimplementowana z wykorzystaniem dwóch języków programowania:
+\begin{itemize}
+    \item Do pobierania danych z API ZTM Warszawskiego i zapisu do bazy danych użyto języka C#.
+    \item Aplikacja interfejsu użytkownika została napisana w języku Python.
+\end{itemize}
+W części C# wykorzystano bibliotekę HttpClient do komunikacji z API oraz Entity Framework do obsługi bazy danych.
+Baza danych będzie zawierała tabele z rozkładami, trasami, godzinami poprawnymi i rzeczywistymi przyjazdu autobusów na każdy przystanek. 
+Usługi po stronie serwera będą w napisane w C#, a sama aplikacja okienkowa będzie w pythonie.
+Do bazy danych trafiają tylko czasy, kiedy autobus zatrzyma się na przystanku.
+Aktualizacja rozkładów będzie robiona codziennie w nocy. 
+
+
+\section{Pytania}
+\begin{enumerate}
+    \item Czy można by było dostać komletne polecenie do projektu?
+    \item Czy może być mniej testerów niż 10?
+    \item Jak mają być uwzględniane przystanki na żądanie?
+    \item W jaki sposób mamy postawić serwer? Czy musi być to komputer zewnętrzny, czy dostaniemy dostęp do komputera uczelnianego?
+    \item Co jeżeli autobus nie przejedzie trasy?
+    \item Jak mamy ustalić, o której godzinie konkretny autobus ma być na konkretnym przystanku, skoro możemy pobrać tylko listę wszystkich czasów o których autobus danej linii będzie na przystanku?
+    \item Jak mamy rozpoznać autobusy z bardzo dużym opóźnieniem (30 minut) i rozróżnić je od następnych autbusów tej samej linii?
+    \item Jak mamy rozwiązać problem z autobusami, które jadąc w jednym kierunku przejeżdżają przez tą samą drogę w obydwu kierunkach?
+    \item Jak mamy ustawić trasę dla autobusów, które mają inne trasy w zależności od kierunku
+\end{enumerate}
+
+\end{document}
